@@ -59,12 +59,12 @@ mod tests {
                 &flow_builder,
                 input_stream,
                 output_stream,
-                RuntimeData::new("0"), 
+                RuntimeData::new("0"),
             );
 
             in_send.send("yes".to_string()).unwrap();
             in_send.send("yes".to_string()).unwrap();
-            in_send.send("no".to_string()).unwrap(); \
+            in_send.send("no".to_string()).unwrap();
             in_send.send("yes".to_string()).unwrap();
 
             voting_process.run_tick();
